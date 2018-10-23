@@ -1,0 +1,106 @@
+.mui-content {
+  background-color: #fff;
+}
+.mui-content .mui-slider-indicator {
+  bottom: 20px;
+}
+.mui-content .shoes {
+  width: 100%;
+  padding: 0 10px;
+}
+.mui-content .shoes ul {
+  width: 100%;
+}
+.mui-content .shoes ul li {
+  float: left;
+  width: 33.33%;
+}
+.mui-content .shoes ul li a {
+  display: block;
+  width: 100%;
+}
+.mui-content .shoes ul li a img {
+  width: 100%;
+  display: block;
+}
+.mui-content .brand {
+  width: 100%;
+  padding: 0 10px;
+}
+.mui-content .brand .head {
+  width: 100%;
+}
+.mui-content .brand .head img {
+  width: 100%;
+}
+.mui-content .brand ul {
+  width: 100%;
+}
+.mui-content .brand ul li {
+  float: left;
+  width: 25%;
+}
+.mui-content .brand ul li a {
+  display: block;
+  width: 100%;
+}
+.mui-content .brand ul li a img {
+  width: 100%;
+  display: block;
+}
+.mui-content .live {
+  width: 100%;
+  padding: 0 10px;
+}
+.mui-content .live .head {
+  width: 100%;
+}
+.mui-content .live .head img {
+  width: 100%;
+}
+.mui-content .live ul {
+  width: 100%;
+}
+.mui-content .live ul li {
+  width: 50%;
+  padding: 10px 5px;
+  float: left;
+  box-sizing: border-box;
+}
+.mui-content .live ul li a {
+  width: 100%;
+  display: block;
+  box-shadow: 0 0 3px #ccc;
+  padding-bottom: 10px;
+}
+.mui-content .live ul li a img {
+  width: 100%;
+}
+.mui-content .live ul li a > span {
+  display: block;
+  line-height: 18px;
+  color: #8f8f94;
+  text-align: center;
+  height: 50px;
+}
+.mui-content .live ul li a > p {
+  text-align: center;
+  height: 20px;
+}
+.mui-content .live ul li a > p span:first-child {
+  font-size: 12px;
+  color: red;
+}
+.mui-content .live ul li a > p span:last-child {
+  font-size: 12px;
+  text-decoration: line-through;
+}
+.mui-content .live ul li a .buy {
+  background-color: #FF6666;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin: 0px auto;
+  display: block;
+  font-size: 12px;
+  color: #fff;
+}
