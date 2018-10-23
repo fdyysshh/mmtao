@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/mui/css/mui.min.css">
+    
+    <link rel="stylesheet" href="./assets/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/category.css">
+    <script src="./assets/mui/js/mui.min.js"></script>
+</head>
+<body>
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-back mui-pull-left"></a>
+		<a class="mui-action-back mui-icon mui-icon-search mui-pull-right"></a>
+		<h1 class="mui-title">萌吉淘</h1>
+	</header>
+	<nav class="mui-bar mui-bar-tab footer">
+		<a class="mui-tab-item mui-active" href="index.html">
+			<span class="mui-icon mui-icon-home"></span>
+			<span class="mui-tab-label">首页</span>
+		</a>
+		<a class="mui-tab-item" href="category.html">
+			<span class="mui-icon mui-icon-bars"></span>
+			<span class="mui-tab-label">分类</span>
+		</a>
+		<a class="mui-tab-item" href="cart.html">
+			<span class="mui-icon iconfont fa fa-shopping-cart"></span>
+			<span class="mui-tab-label">购物车</span>
+		</a>
+		<a class="mui-tab-item" href="user.html">
+			<span class="mui-icon mui-icon-person"></span>
+			<span class="mui-tab-label">会员中心</span>
+		</a>
+	</nav>
+	<div class="my-content">
+            <div class="left">
+                    <div class="mui-scroll-wrapper">
+                            <div class="mui-scroll">
+                                <!--这里放置真实显示的DOM内容-->
+                               <ul><li>
+                                   qe<br> qe<br> qe<br> qe<br>
+                                   qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br>
+                               </li></ul>
+                            </div>
+                        </div>
+            </div>
+       
+            <div class="right">
+                    <div class="mui-scroll-wrapper">
+                            <div class="mui-scroll">
+                                <!--这里放置真实显示的DOM内容-->qe<br> qe<br> qe<br> qe<br>
+                                   qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br>
+                            </div>
+                        </div>
+            </div>
+    </div>
+    <script>
+        mui('.mui-scroll-wrapper').scroll({
+	deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+});
+    </script>
+</body>
+</html>
