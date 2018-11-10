@@ -14,12 +14,37 @@ body {
   width: 80px;
   height: 100%;
   float: left;
-  background-color: pink;
   position: relative;
+}
+.my-content .left .left-nav a {
+  display: block;
+  width: 100%;
+  line-height: 45px;
+  text-align: center;
+  color: #000;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  background-color: #fff;
+}
+.my-content .left .left-nav .active {
+  border-right: none;
+  background-color: transparent;
 }
 .my-content .right {
   height: 100%;
   margin-left: 90px;
-  background-color: aqua;
   position: relative;
+}
+.my-content .right .right-nav {
+  margin-top: 10px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.my-content .right .right-nav ul li {
+  float: left;
+  width: 33.33%;
+}
+.my-content .right .right-nav ul li a img {
+  width: 100%;
+  display: block;
 }

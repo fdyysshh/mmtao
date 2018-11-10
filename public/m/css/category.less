@@ -2,6 +2,7 @@
 html,body{
 width: 100%;
 height: 100%;
+
 }
 .my-content{
     width: 100%;
@@ -9,19 +10,53 @@ height: 100%;
     top: 44px;
     left: 0;
     bottom: 50px;
+    
     .left{
         width: 80px;
         height: 100%;
         float: left;
-        background-color: pink;
+        // background-color: pink;
         position: relative;
-
+        .left-nav{
+            a{
+                display: block;
+                width: 100%;
+                line-height: 45px;
+                text-align: center;
+                color: #000;
+                border-top: 1px solid #ccc;
+                border-right:  1px solid #ccc;
+                background-color:#fff;
+            }
+            .active{
+                
+                border-right:  none;
+                background-color:transparent;
+            }
+        }
     }
     .right{
         height: 100%;
         margin-left: 90px;
-        background-color: aqua;
+        // background-color: aqua;
         position: relative;
+        .right-nav{
+            margin-top:10px;
+            background-color: #fff;
+            overflow: hidden;
+            ul{
+                li{
+                    float: left;
+                    width: 33.33%;
+                    a{
+                        img{
+                            width: 100%;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
