@@ -1,0 +1,23 @@
+body {
+  background-color: #fff;
+}
+body .box-content {
+  background-color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top:44px;
+  margin-bottom: 50px;
+}
+body .box-content .price {
+  width: 50%;
+  height: 35px;
+  line-height: 35px;
+  background-color: #eee;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  float: left;
+}
+body .box-content .price span {
+  font-size: 15px;
+}

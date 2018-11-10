@@ -11,20 +11,23 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/category.css">
     <script src="./assets/mui/js/mui.min.js"></script>
+    <script src="./assets/zepto/zepto.min.js"></script>
+    <script src="./js/category.js"></script>
+    <script src="./assets/artTemplate/template-native.js"></script>
 </head>
 <body>
     <header class="mui-bar mui-bar-nav">
         <a class="mui-action-back mui-icon mui-icon-back mui-pull-left"></a>
-		<a class="mui-action-back mui-icon mui-icon-search mui-pull-right"></a>
+		<a class=" mui-icon mui-icon-search mui-pull-right" href="search.html"></a>
 		<h1 class="mui-title">萌吉淘</h1>
 	</header>
 	<nav class="mui-bar mui-bar-tab footer">
-		<a class="mui-tab-item mui-active" href="index.html">
+		<a class="mui-tab-item " href="index.html">
 			<span class="mui-icon mui-icon-home"></span>
 			<span class="mui-tab-label">首页</span>
 		</a>
-		<a class="mui-tab-item" href="category.html">
-			<span class="mui-icon mui-icon-bars"></span>
+		<a class="mui-tab-item mui-active" href="category.html">
+			<span class="mui-icon mui-icon-bars "></span>
 			<span class="mui-tab-label">分类</span>
 		</a>
 		<a class="mui-tab-item" href="cart.html">
@@ -41,10 +44,11 @@
                     <div class="mui-scroll-wrapper">
                             <div class="mui-scroll">
                                 <!--这里放置真实显示的DOM内容-->
-                               <ul><li>
-                                   qe<br> qe<br> qe<br> qe<br>
-                                   qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br>
-                               </li></ul>
+                              <div class="left-nav" id="leftCate">
+                                  
+                                  
+
+                              </div>
                             </div>
                         </div>
             </div>
@@ -52,16 +56,31 @@
             <div class="right">
                     <div class="mui-scroll-wrapper">
                             <div class="mui-scroll">
-                                <!--这里放置真实显示的DOM内容-->qe<br> qe<br> qe<br> qe<br>
-                                   qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br> qe<br>
+                                <!--这里放置真实显示的DOM内容-->
+                                <div class="right-nav" >
+                                    <ul id="rightCate">
+                                            <!-- <li><a href="javascript:;"><img src="./images/brand1.png" alt=""></a></li> -->
+                                            
+                                        
+                                    </ul>
+                                </div>
                             </div>
                         </div>
             </div>
     </div>
-    <script>
-        mui('.mui-scroll-wrapper').scroll({
-	deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
-});
+    <script type="text/html" id="leftCateTpl">
+        <% for(var i=0; i<data.length;i++){ %>
+                <a href="javascript:;" data-id="<%=data[i].id%>" class="getSecond"><%= data[i].categoryName %></a>
+            <% }%>
+    </script>
+    <script type="text/template" id="rightCateTpl">
+        <%for(var i=0; i<data.length;i++){%>
+        <li><a href="javascript:;"><img src="<%=data[i].brandLogo %>" alt=""></a></li>
+        <%}%>
+
+        <%if(!data.length){%>
+            <span>暂无数据</span>
+            <%}%>
     </script>
 </body>
 </html>
